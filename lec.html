@@ -1,0 +1,27 @@
+<input type = 'text'[(ngModel)] = "myNo" />    //two way binding
+
+<h1> HELLO {{myData}} </h1>  <br>
+
+<button (click)="addNewNumber()">  Click Me  </button> // ask add (update) method to run
+
+<button (click)="deleteAll()">  Clear All  </button>
+
+<h2> you have {{myData.length}} items </h2>
+
+
+<h2> and the sum {{getSum()}} </h2>
+
+<ul  *ngFor= "let item of myData">
+<li>  {{item}} </li>
+</ul>
+
+
+//bootstramp: a library
+//Components are basically classes that interact with the .html file of the component, which gets displayed on the browser.
+
+//Component is the template(view) + a class (Typescript code) containing some logic for the view + metadata(to tell angular about from where to get data it needs to display the template).
+
+
+
+//only the template
+//
